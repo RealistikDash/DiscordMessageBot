@@ -61,6 +61,8 @@ async def on_ready():
                             
                             replayTimes = replayTimes - 1
 
+                            await asyncio.sleep(currentscript["globalDelay"])
+
                     print("Script {} finished!".format(currentscript["name"]))
                     print("Result:\nMessages attempted: {}\nMessages sent: {}\nMessages failed: {}".format(messagesAttempted, messagesSent, messagesFailed))
 
