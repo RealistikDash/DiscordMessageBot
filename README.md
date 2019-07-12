@@ -29,6 +29,7 @@ scriptTemplate = {
     "execname" : "", 
     "name" : "", 
     "creator" : "",
+    "globalDelay" : 0,
     "playTimes" : 1,
     "messages" : [
         "message1",
@@ -45,6 +46,7 @@ Above is a blank version of a script. Here is a table that explains what everyth
 | execname  | What name to use to run the scipt via /exec  |
 | name | The name of the script |
 | creator | The name of the creator |
+| globalDelay | The delay between performing an action by the script |
 | playTimes | How many times the script will repeat |
 | messages | A list of messages that will be sent cronologically |
 
