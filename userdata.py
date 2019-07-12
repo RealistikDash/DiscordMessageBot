@@ -3,7 +3,7 @@ details = {
     "name" : "User Credentials",
     "creator" : "Default",
     "execname" : "details", #required even if script is not executable
-    "isBot" : 0, #0 = login to discord account, 1 = login to discord bot
+    "isBot" : 1, #0 = login to discord account, 1 = login to discord bot
     "email" : "email",
     "password" : "password",
     "botToken" : "" #leave empty if using a discord acc
@@ -22,10 +22,12 @@ testScript = {
     "execname" : "test", #this name will be used if the user wants to execute the script
     "name" : "Sample Script", #name of the script
     "creator" : "RealistikDash", #script creator
-    "playTimes" : 10, #how many times you want the script to play
+    "playTimes" : 1, #how many times you want the script to play
+	"globalDelay" : 1, #THe delay between when each message is sent
     "messages" : [
         "message1",
-        "message2"
+        "message2",
+		"message3"
     ], #all the messages you want to send. Each str is sent as a seperate message
 }
 
