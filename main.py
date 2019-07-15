@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import time
+import random
 
 print("Loading userdata...")
 from userdata import *
@@ -50,6 +51,8 @@ async def on_ready():
                     while replayTimes > 0:
                         for str in currentscript["messages"]:
                             messagesAttempted = messagesAttempted + 1
+                            if currentscript["randomSend"] == 1:
+                                str = random.choice(currentscript["messages"])
                             try:
                                 await bot.send_message(channelId, str)
                                 messagesSent = messagesSent + 1
