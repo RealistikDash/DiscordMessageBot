@@ -31,6 +31,7 @@ scriptTemplate = {
     "creator" : "",
     "globalDelay" : 0,
     "playTimes" : 1,
+    "randomSend" : 0,
     "messages" : [
         "message1",
         "message2"
@@ -48,6 +49,7 @@ Above is a blank version of a script. Here is a table that explains what everyth
 | creator | The name of the creator |
 | globalDelay | The delay between performing an action by the script |
 | playTimes | How many times the script will repeat |
+| randomSend | Sends the messages randomly instead of cronologically |
 | messages | A list of messages that will be sent cronologically |
 
 When you're done, make sure you don't forget to add the dict to the dictList list. It should look something like this after you've added it:
