@@ -89,6 +89,18 @@ async def on_ready():
             except Exception as e1:
                 print("Sending message 1 failed! Error:", e1)
         
+        elif command == "/list":
+            print("Available executable scripts:")
+            for x in dictList:
+                if x["isScript"] == 1:
+                    try:
+                        print("{} - Execname '{}'".format(x["name"], x["execname"]))
+                
+                    except Exception:
+                        pass
+            
+            print("\n")
+        
         else:
             print("Command", command, "does not exist!\n")
         
