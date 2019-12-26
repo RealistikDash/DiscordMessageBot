@@ -1,6 +1,9 @@
 # DiscordMessageBot
 Send or spam Discord messages with an easy to use Python based script tool.
 
+DO NOT USE!
+This uses the old discord.py and is really bad. Do not use! Something like this will be added to Pycord soon. This has never and will never be updated.
+
 # What it does
 
 This tool lets you program your own sets of messages however you want them.
